@@ -1,0 +1,14 @@
+services:
+- type: web
+  name: pryMongoEsp32
+  runtime: python
+  repo: https://github.com/MagdalenaDelaCruzM/RepositoriobasesII.git
+  plan: free
+  envVars:
+  - key: MONGO_URI
+    value: mongodb://atlas-sql-67f6b69119d05d1a1241ea59-gfuph.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+version: "1"
+
