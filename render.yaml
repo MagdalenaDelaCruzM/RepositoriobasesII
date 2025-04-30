@@ -6,7 +6,7 @@ services:
   plan: free
   envVars:
   - key: MONGO_URI
-    value: mongodb://atlas-sql-67f6b69119d05d1a1241ea59-gfuph.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin
+    value: mongodb+srv://maggdc:mcm1234mcm@cluster0.fjzngue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
   region: oregon
   buildCommand: pip install -r requirements.txt
   startCommand: python app.py
